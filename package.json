@@ -4,5 +4,6 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
-  }
+  },
+  "license": "GPL-3.0"
 }
