@@ -32,7 +32,7 @@
 </form>
 <form on:submit|preventDefault={addTodo}>
   <input bind:value>
-  <button type=submit>Add Todo</button><br>
+  <button type=submit>Add Todo</button>
 </form>
 <ul>
   {#each filtered as todo, i (todo.id)}
