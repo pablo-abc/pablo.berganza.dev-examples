@@ -1,0 +1,223 @@
+{
+  "inputs": {
+    "__snowpack__/env.js": {
+      "bytes": 73,
+      "imports": []
+    },
+    "web_modules/carbon-components-svelte/css/g100.css": {
+      "bytes": 488837,
+      "imports": []
+    },
+    "web_modules/common/index-ad827e2b.js": {
+      "bytes": 17785,
+      "imports": []
+    },
+    "web_modules/svelte/internal.js": {
+      "bytes": 460,
+      "imports": [
+        {
+          "path": "web_modules/common/index-ad827e2b.js"
+        }
+      ]
+    },
+    "web_modules/svelte.js": {
+      "bytes": 123,
+      "imports": [
+        {
+          "path": "web_modules/common/index-ad827e2b.js"
+        }
+      ]
+    },
+    "web_modules/carbon-components-svelte.js": {
+      "bytes": 309403,
+      "imports": [
+        {
+          "path": "web_modules/common/index-ad827e2b.js"
+        }
+      ]
+    },
+    "dist/components/AddPokemonModal.css": {
+      "bytes": 57,
+      "imports": []
+    },
+    "dist/components/AddPokemonModal.js": {
+      "bytes": 8590,
+      "imports": [
+        {
+          "path": "dist/components/AddPokemonModal.css"
+        },
+        {
+          "path": "web_modules/svelte/internal.js"
+        },
+        {
+          "path": "web_modules/svelte.js"
+        },
+        {
+          "path": "web_modules/svelte.js"
+        },
+        {
+          "path": "web_modules/carbon-components-svelte.js"
+        }
+      ]
+    },
+    "dist/components/RemovePokemonModal.js": {
+      "bytes": 3283,
+      "imports": [
+        {
+          "path": "web_modules/svelte/internal.js"
+        },
+        {
+          "path": "web_modules/svelte.js"
+        },
+        {
+          "path": "web_modules/carbon-components-svelte.js"
+        }
+      ]
+    },
+    "dist/pages/Home.js": {
+      "bytes": 11365,
+      "imports": [
+        {
+          "path": "web_modules/svelte/internal.js"
+        },
+        {
+          "path": "web_modules/svelte.js"
+        },
+        {
+          "path": "web_modules/carbon-components-svelte.js"
+        },
+        {
+          "path": "dist/components/AddPokemonModal.js"
+        },
+        {
+          "path": "dist/components/RemovePokemonModal.js"
+        }
+      ]
+    },
+    "web_modules/xstate.js": {
+      "bytes": 124147,
+      "imports": []
+    },
+    "dist/machine.js": {
+      "bytes": 2663,
+      "imports": [
+        {
+          "path": "web_modules/xstate.js"
+        }
+      ]
+    },
+    "dist/use-machine.js": {
+      "bytes": 257,
+      "imports": [
+        {
+          "path": "web_modules/xstate.js"
+        },
+        {
+          "path": "web_modules/svelte.js"
+        }
+      ]
+    },
+    "dist/App.js": {
+      "bytes": 1225,
+      "imports": [
+        {
+          "path": "web_modules/svelte/internal.js"
+        },
+        {
+          "path": "web_modules/svelte.js"
+        },
+        {
+          "path": "dist/pages/Home.js"
+        },
+        {
+          "path": "dist/machine.js"
+        },
+        {
+          "path": "dist/use-machine.js"
+        }
+      ]
+    },
+    "dist/index.js": {
+      "bytes": 509,
+      "imports": [
+        {
+          "path": "__snowpack__/env.js"
+        },
+        {
+          "path": "web_modules/carbon-components-svelte/css/g100.css"
+        },
+        {
+          "path": "dist/App.js"
+        }
+      ]
+    }
+  },
+  "outputs": {
+    "../node_modules/.cache/snowpack/~~bundle~~/dist/index.js": {
+      "imports": [],
+      "exports": [
+        "default"
+      ],
+      "inputs": {
+        "__snowpack__/env.js": {
+          "bytesInOutput": 56
+        },
+        "web_modules/carbon-components-svelte/css/g100.css": {
+          "bytesInOutput": 0
+        },
+        "web_modules/common/index-ad827e2b.js": {
+          "bytesInOutput": 5994
+        },
+        "web_modules/svelte/internal.js": {
+          "bytesInOutput": 0
+        },
+        "web_modules/svelte.js": {
+          "bytesInOutput": 0
+        },
+        "web_modules/carbon-components-svelte.js": {
+          "bytesInOutput": 101922
+        },
+        "dist/components/AddPokemonModal.css": {
+          "bytesInOutput": 0
+        },
+        "dist/components/AddPokemonModal.js": {
+          "bytesInOutput": 2565
+        },
+        "dist/components/RemovePokemonModal.js": {
+          "bytesInOutput": 1089
+        },
+        "dist/pages/Home.js": {
+          "bytesInOutput": 3338
+        },
+        "web_modules/xstate.js": {
+          "bytesInOutput": 48869
+        },
+        "dist/machine.js": {
+          "bytesInOutput": 1453
+        },
+        "dist/use-machine.js": {
+          "bytesInOutput": 65
+        },
+        "dist/App.js": {
+          "bytesInOutput": 311
+        },
+        "dist/index.js": {
+          "bytesInOutput": 126
+        }
+      },
+      "bytes": 166619
+    },
+    "../node_modules/.cache/snowpack/~~bundle~~/dist/index.css": {
+      "imports": [],
+      "inputs": {
+        "web_modules/carbon-components-svelte/css/g100.css": {
+          "bytesInOutput": 442673
+        },
+        "dist/components/AddPokemonModal.css": {
+          "bytesInOutput": 57
+        }
+      },
+      "bytes": 442731
+    }
+  }
+}

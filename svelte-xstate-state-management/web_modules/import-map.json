@@ -1,9 +1,0 @@
-{
-  "imports": {
-    "carbon-components-svelte": "./carbon-components-svelte.js",
-    "carbon-components-svelte/css/g100.css": "./carbon-components-svelte/css/g100.css",
-    "svelte": "./svelte.js",
-    "svelte/internal": "./svelte/internal.js",
-    "xstate": "./xstate.js"
-  }
-}
