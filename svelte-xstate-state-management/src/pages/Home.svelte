@@ -17,7 +17,6 @@
     { key: 'base_experience', value: 'Base Experience' },
   ]
   $: rows = $pokemonService.context.addedPokemon || []
-  $: console.log($pokemonService)
   let selectedRowIds = []
   let addModalOpened = false
   let removeModalOpened = false
