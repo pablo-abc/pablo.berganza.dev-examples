@@ -1,5 +1,5 @@
 <script>
-  import { getContext } from 'svelte'
+  import { pokemonService } from '../machine'
   import { createEventDispatcher } from 'svelte'
   import {
     Modal,
@@ -7,8 +7,6 @@
     TextInput,
     ToastNotification,
   } from 'carbon-components-svelte'
-
-  const pokemonService = getContext('pokemonService')
 
   $: searchService = $pokemonService.children.search
 

@@ -1,4 +1,4 @@
-import { Machine, assign } from 'xstate'
+import { Machine, assign, interpret } from 'xstate'
 
 const fetchPokemon = (name) =>
       fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
@@ -115,3 +115,5 @@ export const pokemonMachine = Machine({
     searchMachine,
   },
 })
+
+export const pokemonService = interpret(pokemonMachine).start()

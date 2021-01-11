@@ -1,5 +1,4 @@
 <script>
-  import { getContext } from 'svelte'
   import {
     Modal,
   } from 'carbon-components-svelte'

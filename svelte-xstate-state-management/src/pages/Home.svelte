@@ -1,5 +1,5 @@
 <script>
-  import { getContext } from 'svelte'
+  import { pokemonService } from '../machine'
   import {
     Button,
     DataTable,
@@ -8,8 +8,6 @@
   } from 'carbon-components-svelte'
   import AddPokemonModal from '../components/AddPokemonModal.svelte'
   import RemovePokemonModal from '../components/RemovePokemonModal.svelte'
-
-  const pokemonService = getContext('pokemonService')
 
   let headers = [
     { key: 'id', value: 'ID' },
@@ -26,7 +24,6 @@
   }
 
   function onDelete() {
-    pokemonService.send('REMOVE_MODAL')
     pokemonService.send('CONFIRM', { ids: selectedRowIds })
     selectedRowIds = []
   }
