@@ -64,9 +64,16 @@ export const pokemonMachine = Machine({
   initial: 'home',
   context: {
     addedPokemon: JSON.parse(localStorage.getItem('addedPokemon')) || [],
+    selectedPokemon: undefined,
   },
   states: {
     home: {
+      on: {
+        DETAIL: {
+          target: 'detail',
+          actions: 'selectPokemon',
+        },
+      },
       initial: 'default',
       states: {
         default: {
@@ -97,6 +104,14 @@ export const pokemonMachine = Machine({
         },
       },
     },
+    detail: {
+      on: {
+        HOME: {
+          target: 'home',
+          actions: 'clearSelected',
+        },
+      },
+    },
   },
 }, {
   actions: {
@@ -110,6 +125,12 @@ export const pokemonMachine = Machine({
       addedPokemon: (context, event) => context.addedPokemon.filter(value => !event.ids.includes(value.id))
     }),
     saveContext: (context) => localStorage.setItem('addedPokemon', JSON.stringify(context.addedPokemon)),
+    selectPokemon: assign({
+      selectedPokemon: (_context, event) => event.pokemon,
+    }),
+    clearSelected: assign({
+      selectedPokemon: undefined,
+    }),
   },
   services: {
     searchMachine,

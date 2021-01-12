@@ -13,6 +13,7 @@
     { key: 'id', value: 'ID' },
     { key: 'name', value: 'Name' },
     { key: 'base_experience', value: 'Base Experience' },
+    { key: 'see_more', empty: true  },
   ]
   $: rows = $pokemonService.context.addedPokemon || []
   let selectedRowIds = []
@@ -50,6 +51,16 @@
       </Button>
     </ToolbarContent>
   </Toolbar>
+
+  <span slot=cell let:cell let:row>
+    {#if cell.key === 'see_more'}
+      <Button kind=tertiary on:click="{() => pokemonService.send('DETAIL', { pokemon: row })}">
+        See more
+      </Button>
+    {:else}
+      {cell.value}
+    {/if}
+  </span>
 </DataTable>
 
 <AddPokemonModal
