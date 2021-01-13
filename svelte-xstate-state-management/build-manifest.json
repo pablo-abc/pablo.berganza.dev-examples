@@ -13,7 +13,7 @@
       "imports": []
     },
     "web_modules/svelte/internal.js": {
-      "bytes": 460,
+      "bytes": 488,
       "imports": [
         {
           "path": "web_modules/common/index-f26b2aae.js"
@@ -25,7 +25,7 @@
       "imports": []
     },
     "dist/machine.js": {
-      "bytes": 2739,
+      "bytes": 3181,
       "imports": [
         {
           "path": "web_modules/xstate.js"
@@ -84,7 +84,7 @@
       ]
     },
     "dist/pages/Home.js": {
-      "bytes": 11247,
+      "bytes": 15141,
       "imports": [
         {
           "path": "web_modules/svelte/internal.js"
@@ -103,14 +103,41 @@
         }
       ]
     },
+    "dist/pages/Detail.css": {
+      "bytes": 44,
+      "imports": []
+    },
+    "dist/pages/Detail.js": {
+      "bytes": 3159,
+      "imports": [
+        {
+          "path": "dist/pages/Detail.css"
+        },
+        {
+          "path": "web_modules/svelte/internal.js"
+        },
+        {
+          "path": "dist/machine.js"
+        },
+        {
+          "path": "web_modules/carbon-components-svelte.js"
+        }
+      ]
+    },
     "dist/App.js": {
-      "bytes": 934,
+      "bytes": 3943,
       "imports": [
         {
           "path": "web_modules/svelte/internal.js"
         },
         {
           "path": "dist/pages/Home.js"
+        },
+        {
+          "path": "dist/pages/Detail.js"
+        },
+        {
+          "path": "dist/machine.js"
         }
       ]
     },
@@ -143,7 +170,7 @@
           "bytesInOutput": 0
         },
         "web_modules/common/index-f26b2aae.js": {
-          "bytesInOutput": 5952
+          "bytesInOutput": 5950
         },
         "web_modules/svelte/internal.js": {
           "bytesInOutput": 0
@@ -152,10 +179,10 @@
           "bytesInOutput": 48869
         },
         "dist/machine.js": {
-          "bytesInOutput": 1471
+          "bytesInOutput": 1703
         },
         "web_modules/carbon-components-svelte.js": {
-          "bytesInOutput": 101922
+          "bytesInOutput": 101938
         },
         "dist/components/AddPokemonModal.css": {
           "bytesInOutput": 0
@@ -164,22 +191,28 @@
           "bytesInOutput": 0
         },
         "dist/components/AddPokemonModal.js": {
-          "bytesInOutput": 2534
+          "bytesInOutput": 2533
         },
         "dist/components/RemovePokemonModal.js": {
-          "bytesInOutput": 1089
+          "bytesInOutput": 1088
         },
         "dist/pages/Home.js": {
-          "bytesInOutput": 3296
+          "bytesInOutput": 4459
+        },
+        "dist/pages/Detail.css": {
+          "bytesInOutput": 0
+        },
+        "dist/pages/Detail.js": {
+          "bytesInOutput": 990
         },
         "dist/App.js": {
-          "bytesInOutput": 252
+          "bytesInOutput": 930
         },
         "dist/index.js": {
           "bytesInOutput": 126
         }
       },
-      "bytes": 166398
+      "bytes": 169473
     },
     "../node_modules/.cache/snowpack/~~bundle~~/dist/index.css": {
       "imports": [],
@@ -187,11 +220,14 @@
         "web_modules/carbon-components-svelte/css/g100.css": {
           "bytesInOutput": 442673
         },
+        "dist/pages/Detail.css": {
+          "bytesInOutput": 44
+        },
         "dist/components/AddPokemonModal.css": {
           "bytesInOutput": 57
         }
       },
-      "bytes": 442731
+      "bytes": 442775
     }
   }
 }
