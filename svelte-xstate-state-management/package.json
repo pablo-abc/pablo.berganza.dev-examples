@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "@xstate/inspect": "^0.4.1",
-    "svelte": "^3.24.0",
+    "svelte": "^3.49.0",
     "xstate": "^4.15.4"
   },
   "devDependencies": {
